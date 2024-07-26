@@ -1,17 +1,13 @@
-# argotest
-
-```
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bszeti-app
+  name: bszeti-content
 spec:
   destination:
     namespace: openshift-gitops
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    path: app
+    path: content
     repoURL: 'https://github.com/bszeti/argotest.git'
-    targetRevision: mybranch
-```
+    targetRevision: HEAD
