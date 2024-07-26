@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  foo: main branch
+kind: ConfigMap
+metadata:
+  name: test
+  namespace: default
